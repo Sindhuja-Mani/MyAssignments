@@ -23,14 +23,14 @@ public class Edit {
 	   driver.findElement(By.id("createLeadForm_companyName")).sendKeys("CTS");
 	   driver.findElement(By.id("createLeadForm_firstName")).sendKeys("Sindhuja");
 	   driver.findElement(By.id("createLeadForm_lastName")).sendKeys("Mani");
-	   driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("Sindhujamani11@gmail.com");
+	   driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("Sindhuja@gmail.com");
 	   driver.findElement(By.id("createLeadForm_primaryPhoneNumber")).sendKeys("9787676767");
 	   driver.findElement(By.name("submitButton")).click();
 	   String title1= driver.getTitle();
 	   System.out.println(title1);
 	   driver.findElement(By.linkText("Edit")).click();
 	   driver.findElement(By.id("updateLeadForm_companyName")).clear();
-	   driver.findElement(By.id("updateLeadForm_companyName")).sendKeys("Infosys");
+	   driver.findElement(By.id("updateLeadForm_companyName")).sendKeys("Testleaf");
 	 driver.findElement(By.name("submitButton")).click();
 	}
 
