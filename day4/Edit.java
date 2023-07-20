@@ -31,7 +31,7 @@ public class Edit {
 	   driver.findElement(By.linkText("Edit")).click();
 	   driver.findElement(By.id("updateLeadForm_companyName")).clear();
 	   driver.findElement(By.id("updateLeadForm_companyName")).sendKeys("Infosys");
-	 // need guidance to get the Unique locator
+	 driver.findElement(By.name("submitButton")).click();
 	}
 
 }
